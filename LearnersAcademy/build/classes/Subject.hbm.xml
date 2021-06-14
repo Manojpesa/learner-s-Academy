@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.simplilearn">
+    <class name="com.simplilearn.Subject" table="subject_mst">
+        <id name="SUBJECTID" type="long" column="SUBID">
+            <generator class="identity"/>
+        </id>
+        <property name="subjectname" type="string" column="SUBNAME"/>
+        <property name="teachername" type="string" column="TEACHERNAME"/>
+        <property name="classname" type="string" column="CLASSNAME"/>
+    </class>
+</hibernate-mapping>
